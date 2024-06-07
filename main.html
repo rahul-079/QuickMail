@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>QuickMail</title>
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+  <div id="container">
+   
+   <div>
+    <h1>
+    <span class="txt-rotate" data-period="1000"
+      data-rotate='[ "Think it, Send it!","&nbsp ENJOY !!!" ]'></span>
+    </h1>
+     <a href="index.html"><p id="heading">QuickMail</p></a>
+   </div>
+   
+   <div>
+    <form method="post">
+      <label for="senderEmail">From:</label>
+      <input type="email" id="senderEmail" name="senderEmail" required>
+  
+      <br><br><br>
+  
+      <label for="subject" style="margin-top: -2em;z-index: 22;position: absolute;">Subject:</label>
+      <input type="text" id="subject" name="subject" required>
+  
+      <br><br><br>
+  
+      <label for="csvFile">CSV File:</label>
+      <input type="file" id="csvFile" name="csvFile" accept=".csv" required>
+  
+      <br><br>
+  
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" cols="5" required></textarea>
+  
+      <br><br>
+  
+      <input type="button" value="Send Emails" style="font-weight: bold;" onclick="sendEmails()">
+  
+      <br>
+      <div style="display:flex">
+        <div>
+          <p style="color: #ffffff;">Valid Emails: <span id="validEmailCount"></span></p>
+          <div id="validEmails" style="float: left"></div>
+        </div>
+        <div style="margin-left: 15px">
+          <p style="color: #ffffff;">Invalid Emails: <span id="invalidEmailCount"></span></p>
+          <div id="invalidEmails" style="float: left"></div>
+        </div>
+      </div>
+     </form>
+   </div> 
+   
+  
+<div class="word"> </div>
+  
+  </div>
+  
+  <footer style="text-align: center; padding: 1em 0;">
+    
+    <a href="https://www.linkedin.com/in/rahul-pamu-b7a3b0248/" target="_blank" style="margin-left: 10px;">
+      <i class="fab fa-linkedin fa-2x"></i>
+    </a>
+    <a href="mailto:rahul.chandu321@gmail.com" target="_blank">
+      <i class="fas fa-envelope fa-2x"></i>
+    </a>
+    <a href="https://github.com/rahul-079" target="_blank" style="margin-right: 10px;">
+      <i class="fab fa-github fa-2x"></i>
+    </a>
+    <br>
+    <p>Made By Rahul.</p>
+  </footer>
+
+  <script src="script.js"> </script>
+
+</body>
+
+</html>

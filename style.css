@@ -1,0 +1,217 @@
+/* Set default font family, background color, and text color */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000000;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+  background-size: cover;
+  position:relative;
+  color: #ffff;
+  overflow-y: auto;
+  z-index: 2;
+}
+
+
+  
+
+
+
+
+/* Center the main heading and add margin at the top */
+#heading {
+color: 
+#ffffff;
+/*font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;*/
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+margin: 10% 5% 10% 10%;
+font-size: 4.8em;
+font-weight: bolder;
+position: absolute;
+margin-top: 10%;
+margin-bottom: 5%;
+
+}
+
+
+/* Style the form container */
+form {
+  max-width: 595px;
+  max-height: 610px;
+  margin-left: 52%;
+  margin-top: 1.3%;
+  margin-bottom: 1%;
+  /* From https://css.glass */
+  background: rgba(252, 252, 252, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.7px);
+  -webkit-backdrop-filter: blur(2.7px);
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  padding: 20px;
+  /* border-radius: 10px; */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  position: relative;
+}
+
+/* Style form labels */
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #7918cc;
+}
+
+/* Style text inputs and text areas */
+input[type="email"],
+textarea {
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #ffffff;
+  background: rgba(187, 179, 179, 0.1);
+}
+
+  /* Style text inputs and text areas */
+  #subject{
+    width: 90%;
+    padding: 10px;
+    margin-bottom:-1em;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #ffffff;
+    z-index: 22;
+    position: absolute;
+    border-color: #ffff;
+    background: rgba(187, 179, 179, 0.1);
+  }
+
+/* Style file input */
+input[type="file"] {
+  margin-bottom: 12px;
+  color: #ffffff;
+  
+}
+
+/* Style form submit button */
+input[type="button"] {
+  display: block;
+  width: 100%;
+  padding: 5px;
+  background-color: #7918cc;
+  
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Style submit button on hover */
+input[type="button"]:hover {
+  color: #7918cc;
+  background-color:#ffffff;
+  
+}
+
+/* Style container for valid and invalid emails */
+#validEmails {
+  margin-top: 1px;
+}
+#invalidEmails {
+  margin-top: 1px;
+  
+} 
+
+/* Style paragraphs within container for valid and invalid emails */
+#validEmails p,
+#invalidEmails p {
+  font-weight: bold;
+  color: #ffffff;
+}
+
+
+/* Style divs within container for valid and invalid emails */
+#validEmails div {
+color: #ffffff;
+}
+
+#invalidEmails div {
+color: #ffffff;
+}
+
+#message{
+  color:#ffffff;
+}
+#senderEmail{
+  color:#ffffff;
+}
+
+/* Style text inputs and text areas */
+input[type="email"]:focus,
+textarea:focus {
+  outline: none !important;
+  border-color: #ffffff;
+ 
+}
+#validEmails, #invalidEmails {
+  height: 4.8rem;
+  color: #979595;
+  overflow: auto;
+
+}
+
+
+.img1{
+height:250px; 
+margin-top: -15em;
+position: fixed;
+}
+
+.img2{
+height:200px;
+margin-top:-23em;
+position: absolute;
+margin-left: 13.3em;
+}
+
+h1,h2 {
+font-weight: 200;
+margin: 0.4em 0;
+z-index: 12;
+position: absolute;
+margin-top: 15em;
+margin-left:14em ;
+
+}
+h1 { font-size: 19px;
+font-weight: bolder; 
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+margin-left: 17%;
+}
+h2 {
+color: #ffffff;
+font-size: 18px;
+}
+
+footer {
+  text-align: center;
+  padding: 1em 0;
+}
+
+footer a {
+  margin: 0 5px;
+  color: inherit; /* Use the inherited color */
+  text-decoration: none;
+}
+
+footer a:active {
+  color: white;
+}
+footer a:hover {
+  color:#7918cc ;
+}
